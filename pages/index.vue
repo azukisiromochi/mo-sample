@@ -38,6 +38,19 @@ export default {
     }
   },
   mounted() {
+    vuemo
+      .shape({
+        shape: 'circle',
+        scale: { 0: 1 },
+        left: '25%',
+        fill: { cyan: 'yellow' },
+        radius: 25,
+
+        duration: 2000,
+        repeat: 999
+      })
+      .play()
+
     this.burst = vuemo.burst({
       radius: { 25: 75 },
       count: 10,
